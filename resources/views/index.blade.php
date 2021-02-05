@@ -33,7 +33,7 @@
             
             
             <div class="item content-right">
-                <img src="img/al.jpg" alt="" class="image2">
+                <img src="{{ secure_asset('img/al.jpg') }}" alt="" class="image2">
             </div>
       
       
