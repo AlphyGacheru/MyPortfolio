@@ -39,7 +39,7 @@ body {
 /* header */
 
 #container {
-    background-image: url('/img/bgAlphy.jpg');
+    background-image: secure_url('img/bgAlphy.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -203,7 +203,7 @@ img {
 /* Contact Page */
 
 #contact {
-    background-image: url('/img/bgAlphy.jpg');
+    background-image: secure_url('img/bgAlphy.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
