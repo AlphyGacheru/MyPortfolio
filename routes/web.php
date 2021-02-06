@@ -39,7 +39,7 @@ Route::post('/contact', function (Request $request) {
   
 
 Mail::to('alphycomedian@gmail.com')
-        ->send(new EmailFromClient($clientDetails));
+        ->send(new \App\Mail\EmailFromClient($clientDetails));
 
     return redirect(route('contact'))
         ->with('flash', 'Message Sent Successfully');
