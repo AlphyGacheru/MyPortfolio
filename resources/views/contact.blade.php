@@ -17,7 +17,7 @@
     <header id="contact">
         <div class="contact-content">
 
-            <form class="form" method="post" action="{{ route('contact') }}" autocomplete="new-password">
+            <form class="form" method="post" action="{{ secure_url('/contact') }}" autocomplete="off">
 
                 @csrf
 
