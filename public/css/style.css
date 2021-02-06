@@ -231,7 +231,6 @@ img {
     max-width: calc(100vw - 40px);
     box-sizing: border-box;
     position: relative;
-    /* overlay */
 }
 
 h2 {

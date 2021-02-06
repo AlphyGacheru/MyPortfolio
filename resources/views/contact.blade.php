@@ -17,7 +17,7 @@
     <header id="contact">
         <div class="contact-content">
 
-            <form class="form" method="post" action="{{ route('contact') }}">
+            <form class="form" method="post" action="{{ route('contact') }}" autocomplete="off">
 
                 @csrf
 
