@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   @yield('title')
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+@yield('title')
    
 <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
 
 </head>
+
+
+
+
+
+
+
+
 <body>
     <nav id="navbar">
         <ul>
