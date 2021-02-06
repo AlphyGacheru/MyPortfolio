@@ -17,27 +17,29 @@
     <header id="contact">
         <div class="contact-content">
 
-            <form class="form" method="post" action="{{ route('contact') }}" autocomplete="off">
+            <form class="form" method="post" action="{{ route('contact') }}">
 
                 @csrf
 
                 <h2>CONTACT ME</h2>
-                <p type="Name:"><input name="name" value="{{ old('name') }}">
-                    @error('name')
-                    <p style="color: red; font-size:1rem;">{{ $errors->first('name') }}</p>
+                <p type="Name:"><input name="name" value="{{ old('name') }}" type="text">
+                     </p>
+                @error('name')
+                <p style="color: red; font-size:1rem;">{{ $errors->first('name') }}</p>
                 @enderror
-                </p>
 
-                <p type="Email:"><input name="email" value="{{ old('email') }}">
-                    @error('email')
+                <p type="Email:"><input name="email" value="{{ old('email') }}" type="email">
+                    
+                </p>
+                @error('email')
                     <p style="color: red; font-size:1rem;">{{ $errors->first('email') }}</p>
                 @enderror
+                <p type="Message:"><input name="message" value="{{ old('message') }}" type="text">
+              
                 </p>
-                <p type="Message:"><input name="message" value="{{ old('message') }}">
-                    @error('message')
-                    <p style="color: red; font-size:1rem;">{{ $errors->first('message') }}</p>
-                @enderror
-                </p>
+                @error('message')
+                <p style="color: red; font-size:1rem;">{{ $errors->first('message') }}</p>
+            @enderror
 
 
                 <button>Send Message</button>
