@@ -33,7 +33,7 @@
 
     @yield('header')
     <footer id="footer">
-        <p> ©  2021 Alphayo Gacheru </p>    
+        <p> © 2021 Alphayo Gacheru </p>    
     </footer>
 
 </body>
